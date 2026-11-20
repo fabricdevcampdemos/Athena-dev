@@ -1,0 +1,19 @@
+$schema: https://developer.microsoft.com/json-schemas/fabric/item/deploymentPlan/definition/plan/1.0.0/schema.json
+version: 1.0.0
+groups:
+  - name: deployment_logs_Lakehouse
+    logicalId: 071a0dde-e4f6-4764-90a4-7dca164e90b2
+    postActions:
+      - name: wait_for_lakehouse_provisioning_to_comple_SynapseNotebook
+        job:
+          type: Execute
+          logicalId: d2132b17-359c-4961-92a9-f0da7b3d9c6b
+  - name: Product Sales DirectLake Model_dataset
+    logicalId: 4a6b5ffd-5c81-4f30-85cf-a6640e6cd5ff
+    postActions:
+      - name: connect_model_to_azure_datasource_SynapseNotebook
+        job:
+          type: Execute
+          logicalId: f2a27f80-7ef3-4935-ab86-042106c3ac28
+    dependsOn:
+      - groupName: deployment_logs_Lakehouse

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Notebook",
+    "displayName": "connect_model_to_azure_datasource"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "f2a27f80-7ef3-4935-ab86-042106c3ac28"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "DeploymentPlan",
+    "displayName": "deploy_to_branched_workspace"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "e7a3080a-82c1-9f5c-47c5-bd811126eb10"
+  }
+}
